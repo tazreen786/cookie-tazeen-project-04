@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery.css">
+    <title>Document</title>
+</head>
+<body>
+     <!--Heading-->
+     <section>
+        <div class="header">
+            <h1>Welcome To Zombie Outbreak Adventure...</h1>
+
+            <div class="steps-container">
+                <li>Click on the 1st image and register yourself enter your
+                    username, email & password.</li>
+                <li>Now, click on the 2nd image to get your details.</li>
+                <li>Click three times on the 3rd image if your score is
+                    greater than 10 then click on the next image.</li>
+                <li>Finally, click on the 4th image and get a coupon.</li>
+            </div>
+
+        </div>
+
+        <div class="gallery">
+            <div id="image1" onclick="showForm()">
+                <img
+                    src="./Images/maxresdefault.jpg"
+                    alt class="Zombie outbreak adventure image" />
+            </div>
+            <div id="image2" onclick="showRegisteredUser()"><img
+                    src="./Images/c691a750-12bc-11ee-bfb6-3d6fbe9f432d.jpeg"
+                    alt class="Zombie outbreak adventure image" /></div>
+            <div id="image3" onclick="rollDice()"><img
+                    src="./Images/capsule_616x353.jpg"
+                    alt class="Zombie outbreak adventure image" /></div>
+            <div id="image4" onclick="generateCoupon()"><img
+                    src="./Images/unnamed.png"
+                    alt class="Zombie outbreak adventure  image" /></div>
+        </div>
+
+    </section>
+
+    <!--Registration form-->
+    <div id="form-container">
+        <div id="registration-form">
+            <h1>Register Yourself</h1>
+            <form id="user-form">
+                <input type="text" id="username" placeholder="Username"><br><br>
+                <input type="email" id="email" placeholder="Email"><br><br>
+                <input type="password" id="password" placeholder="Paassword"><br><br>
+                <button type="button" onclick="registerUser()">Register</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
